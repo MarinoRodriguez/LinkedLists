@@ -12,6 +12,6 @@ class MyLinkedList
         ~MyLinkedList();
 
         void Add(MyLinkedList *node);
-        void Update(MyLinkedList *old, MyLinkedList *new);
+        void Update(MyLinkedList *old, MyLinkedList *newNode);
         void Remove(MyLinkedList *node);
 };
