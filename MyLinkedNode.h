@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 
 class MyLinkedNode
@@ -12,8 +13,11 @@ public:
     ~MyLinkedNode();
 
     void SetPrev(MyLinkedNode *prev);
-    MyLinkedNode GetPrev();
+    MyLinkedNode* GetPrev();
 
     void SetNext(MyLinkedNode *next);
-    MyLinkedNode GetNext();
+    MyLinkedNode* GetNext();
+
+    void SetNombre(std::string nombre);
+    std::string GetNombre();
 };

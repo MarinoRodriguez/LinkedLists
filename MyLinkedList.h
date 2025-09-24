@@ -4,14 +4,14 @@
 class MyLinkedList
 {
     private:
-    MyLinkedNode::MyLinkedNode *_first;
-    MyLinkedNode::MyLinkedNode *_last;
+    MyLinkedNode *_first;
+    MyLinkedNode *_last;
     
     public:
         MyLinkedList();
         ~MyLinkedList();
 
-        void Add(MyLinkedList::MyLinkedList *node);
-        void Update(MyLinkedList::MyLinkedList *old, MyLinkedList::MyLinkedList *new);
-        void Remove(MyLinkedList::MyLinkedList *node);
+        void Add(MyLinkedList *node);
+        void Update(MyLinkedList *old, MyLinkedList *new);
+        void Remove(MyLinkedList *node);
 };
