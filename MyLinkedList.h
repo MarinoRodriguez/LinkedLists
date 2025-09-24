@@ -11,7 +11,11 @@ class MyLinkedList
         MyLinkedList();
         ~MyLinkedList();
 
-        void Add(MyLinkedList *node);
-        void Update(MyLinkedList *old, MyLinkedList *newNode);
-        void Remove(MyLinkedList *node);
+        void Add(MyLinkedNode *node);
+        void Update(MyLinkedNode *old, MyLinkedNode *newNode);
+        void Remove(MyLinkedNode *node);
+
+        //mis extras
+        MyLinkedNode* GetFirst();
+        MyLinkedNode* GetLast();
 };
