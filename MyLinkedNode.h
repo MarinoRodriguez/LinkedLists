@@ -9,7 +9,7 @@ private:
     MyLinkedNode *_next;
 
 public:
-    MyLinkedNode();
+    MyLinkedNode(std::string nombre);
     ~MyLinkedNode();
 
     void SetPrev(MyLinkedNode *prev);

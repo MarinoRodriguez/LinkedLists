@@ -1,25 +1,35 @@
 #include "MyLinkedNode.h"
 
-MyLinkedNode* MyLinkedNode::GetNext(){
+MyLinkedNode::MyLinkedNode(std::string nombre) : _nombre(nombre)
+{
+}
+
+MyLinkedNode *MyLinkedNode::GetNext()
+{
     return MyLinkedNode::_next;
 }
 
-void MyLinkedNode::SetNext(MyLinkedNode *next) {
+void MyLinkedNode::SetNext(MyLinkedNode *next)
+{
     _next = next;
 }
 
-MyLinkedNode* MyLinkedNode::GetPrev(){
+MyLinkedNode *MyLinkedNode::GetPrev()
+{
     return MyLinkedNode::_prev;
 }
 
-void MyLinkedNode::SetPrev(MyLinkedNode *prev) {
+void MyLinkedNode::SetPrev(MyLinkedNode *prev)
+{
     _prev = prev;
 }
 
-void MyLinkedNode::SetNombre(std::string nombre){
- _nombre = nombre;
+void MyLinkedNode::SetNombre(std::string nombre)
+{
+    _nombre = nombre;
 }
 
-std::string MyLinkedNode::GetNombre(){
+std::string MyLinkedNode::GetNombre()
+{
     return _nombre;
 }
