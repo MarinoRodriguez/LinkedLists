@@ -10,7 +10,6 @@ private:
 
 public:
     MyLinkedNode(std::string nombre);
-    ~MyLinkedNode();
 
     void SetPrev(MyLinkedNode *prev);
     MyLinkedNode* GetPrev();

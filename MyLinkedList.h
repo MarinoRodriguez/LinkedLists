@@ -9,7 +9,6 @@ class MyLinkedList
     
     public:
         MyLinkedList();
-        ~MyLinkedList();
 
         void Add(MyLinkedNode *node);
         void Update(MyLinkedNode *old, MyLinkedNode *newNode);
