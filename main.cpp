@@ -17,12 +17,13 @@ int main(){
 
     std::cout << myList.GetFirst()->GetNombre() << std::endl;
 
-    myList.Update(&node1, &node2);
+    MyLinkedNode node4("cuarto nodo");
+
+    myList.Update(&node1, &node4);
 
     std::cout << myList.GetFirst()->GetNombre() << std::endl;
 
-    myList.Remove(&node2);
-    myList.Remove(&node1);
+    myList.Remove(&node4);
 
     std::cout << myList.GetFirst()->GetNombre() << std::endl;
 
